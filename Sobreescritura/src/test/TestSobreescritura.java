@@ -11,10 +11,16 @@ public class TestSobreescritura {
        empleado = new Gerente("Karla", 10000, "Contabilidad");
        //System.out.println("gerente = " + gerente.obtenerDetalles());
        imprimir(empleado);
+
+       Manager empleado2 = new Manager("Anita", 2000, "Temuco");
+
+       imprimir(empleado2);
     }
     
     public static void imprimir(Empleado empleado){
         String detalles = empleado.obtenerDetalles();
         System.out.println("empleado = " + detalles);
     }
-}
+
+    }
+
